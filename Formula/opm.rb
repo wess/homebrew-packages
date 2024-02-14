@@ -1,4 +1,4 @@
-class Hatch < Formula
+class Opm < Formula
   desc "Command line tool for building OpenAPI specs."
   homepage "https://github.com/wess/opm"
   url "https://github.com/wess/opm/archive/refs/tags/0.0.1.zip"
