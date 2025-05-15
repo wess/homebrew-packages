@@ -1,19 +1,19 @@
 class Rove < Formula
   desc "PostgreSQL migrations tool built with Bun and TypeScript"
   homepage "https://github.com/wess/rove"
-  version "0.0.1"
+  version "0.0.2"
 
   if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/wess/rove/releases/download/v#{version}/rove-#{version}-darwin-x64.tar.gz"
-      sha256 "616fd40b2f6dfb245eb9f4dd8c26fead832e326a08a92ef6d061f47c45d5b32c"
+      sha256 "6ee8448bccf4231223f890d2489d4d24c71bb9849efd01aeace129b817121e87"
     else # ARM
       url "https://github.com/wess/rove/releases/download/v#{version}/rove-#{version}-darwin-arm64.tar.gz"
-      sha256 "f72f59d76ea646b4477b04036ec04d630334e18e554dfe50929f4a6e03fb46b5"
+      sha256 "668df31932b8cc196edf7200f11292e3cb53edaafb246e1041fdf61eb031f548"
     end
   elsif OS.linux?
     url "https://github.com/wess/rove/releases/download/v#{version}/rove-#{version}-linux-x64.tar.gz"
-    sha256 "dde252100e89c48f8592c8bb684bc2cf58ff8735c7de23a5f10bd37f09ffeffc"
+    sha256 "d7e73608ec72011cc1f3cb7fcc92f1a2a342b82883a89c882bcbce0ca0e28b19"
   end
 
   def install
