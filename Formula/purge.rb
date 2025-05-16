@@ -17,7 +17,7 @@ class Purge < Formula
   end
 
   def install
-    bin.install "purge"
+    bin.install "prg"
   end
 
   test do
