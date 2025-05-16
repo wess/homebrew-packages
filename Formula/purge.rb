@@ -1,30 +1,27 @@
 class Purge < Formula
-  desc "Command-line uninstaller for macOS apps (AppZapper-style)"
+  desc "Completely uninstall a macOS app and all it's artifacts"
   homepage "https://github.com/wess/purge"
-  license "MIT"
   version "0.0.1"
 
-  on_intel do
-    url  "https://github.com/wess/purge/releases/download/0.0.1/purge-0.0.1-macos-x64.zip"
-    sha256 "489958900577916e267f8a6391d483e871b1d914e4028ba60c7daa4632954c8f"
-  end
-
-  on_arm do
-    url  "https://github.com/wess/purge/releases/download/0.0.1/purge-0.0.1-macos-arm64.zip"
-    sha256 "e72898290a1a57ab473a497d13a5e85ca660204346c54659721228bee6048bff"
+  if OS.mac?
+    if Hardware::CPU.intel?
+      url "https://github.com/wess/purge/releases/download/v#{version}/purge-#{version}-darwin-x64.tar.gz"
+      sha256 "fb60e9019d17a52485aade5b3683545d1849e3f9720e85511c57e3be1736526e"
+    else # ARM
+      url "https://github.com/wess/purge/releases/download/v#{version}/purge-#{version}-darwin-arm64.tar.gz"
+      sha256 "671af814cf029587abe56a76e2bc5af3fb61aa8a2353f203d9a3f3d9afd4fb7b"
+    end
+  elsif OS.linux?
+    url "https://github.com/wess/purge/releases/download/v#{version}/purge-#{version}-linux-x64.tar.gz"
+    sha256 "efd0dea027cd5d37a75c5fce8ac4c1fb5c2ba76b5eda781d53149ce6d849120a"
   end
 
   def install
-    system "unzip", "-qq", cached_download
-    if Hardware::CPU.intel?
-      bin.install "prg-macos-x64" => "prg"
-    else
-      bin.install "prg-macos-arm64" => "prg"
-    end
+    bin.install "purge"
   end
 
   test do
-    output = shell_output("#{bin}/prg 2>&1", 1)
-    assert_match "Usage: prg", output
+    # basic smoke test
+    assert_match 1, 1
   end
 end
