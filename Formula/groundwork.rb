@@ -1,7 +1,7 @@
 class Groundwork < Formula
   desc "CLI toolkit for all things full stack (ish)"
   homepage "https://github.com/wess/groundwork"
-  version "0.0.2"
+  version "0.0.1"
 
   if OS.mac?
     if Hardware::CPU.intel?
