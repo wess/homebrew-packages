@@ -1,19 +1,19 @@
 class Groundwork < Formula
   desc "CLI toolkit for all things full stack (ish)"
   homepage "https://github.com/wess/groundwork"
-  version "0.0.3"
+  version "0.0.4"
 
   if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/wess/groundwork/releases/download/v#{version}/groundwork-#{version}-darwin-x64.tar.gz"
-      sha256 "763f6de140d9013bee33ab26087f0c3df46ce708020e1a4a3f4e4d57af187ff0"
+      sha256 "8203b46b6770d5921ba0c98ac80c14e6562d15d56b2568472aba4545d878ef21"
     else # ARM
       url "https://github.com/wess/groundwork/releases/download/v#{version}/groundwork-#{version}-darwin-arm64.tar.gz"
-      sha256 "3f2b8c5d2f2b81b747fc0475e69e18b4b85a5ddd209292b4cdfe7e3e50521227"
+      sha256 "daab33eb8282cd3ed54bd1e68b0a2e9980b8cd396914032c3684151c18962df7"
     end
   elsif OS.linux?
     url "https://github.com/wess/groundwork/releases/download/v#{version}/groundwork-#{version}-linux-x64.tar.gz"
-    sha256 "cc5dacd29ff73e5e4c91f923ed44535927396230f7487e884b9e9ad939d5f487"
+    sha256 "b73c9bd36d0647755d40020d06cad6b742120e034b28cd307c6a5f145d2a90fb"
   end
 
   def install
