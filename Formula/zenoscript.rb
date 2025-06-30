@@ -1,19 +1,19 @@
 class Zenoscript < Formula
   desc "Bringing Functional-ish to Typescript"
   homepage "https://github.com/wess/zenoscript"
-  version "0.1.3"
+  version "0.1.4"
 
   if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/wess/zenoscript/releases/download/v#{version}/zenoscript-darwin-x64.tar.gz"
-      sha256 "8a8f0d00f1e6a8cc30bdaff85b593aebfc97ecdb5feebc4f129eaaa70e8cb24d"
+      sha256 "084a4dc4c09567e39fb9c7cb0d127f4a8a9918dcb935d7d53c18c1a6955d634f"
     else # ARM
       url "https://github.com/wess/zenoscript/releases/download/v#{version}/zenoscript-darwin-arm64.tar.gz"
-      sha256 "ec258ed39b576775494f090b0152e64dcc5dd8943bcf5a6c4573142c128dde41"
+      sha256 "aa760519cfbea9af999d71fa45fa03787efbe79181f690375c603d4a6db2f8fb"
     end
   elsif OS.linux?
     url "https://github.com/wess/zenoscript/releases/download/v#{version}/zenoscript-linux-x64.tar.gz"
-    sha256 "547a10ea744b862282fd0c59af8a6e2bcf5ef2cc0d0a6175d247a45e29563149"
+    sha256 "7ddec4997f4b00f7a13c716754b4afacd793babcb9ce5e70cf45afcce62413a7"
   end
 
   def install
