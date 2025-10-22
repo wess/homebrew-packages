@@ -22,7 +22,7 @@ class Realm < Formula
   end
 
   def install
-    bin.install "rove"
+    bin.install "realm"
   end
 
   test do
