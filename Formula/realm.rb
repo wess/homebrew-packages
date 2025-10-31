@@ -1,23 +1,23 @@
 class Realm < Formula
   desc "Isolated environment for the full stack developer of awesomeness."
   homepage "https://github.com/wess/realm"
-  version "1.1.0"
+  version "1.2.0"
 
   if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/wess/realm/releases/download/v#{version}/realm-darwin-x64-#{version}.tar.gz"
-      sha256 "2e56c8238de659a6865bd19f5c43d61dc1a8da7b7ef1b326995af30de752e79b"
+      sha256 "8b9f9e6ff281d1e64e981ba77211cc06b4d61953c9901b77f547a44506e7dabf"
     else # ARM
       url "https://github.com/wess/realm/releases/download/v#{version}/realm-darwin-arm64-#{version}.tar.gz"
-      sha256 "8e877a8fd6b4b1f70e737ba3e61deb156c0e37056500f48f38b02de5c4c1fd13"
+      sha256 "c02e02f9164855d21c91228da40281098e1d549075542953088e3651ef914a92"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/wess/realm/releases/download/v#{version}/realm-linux-x64-#{version}.tar.gz"
-      sha256 "cc041831623dcbf5ac22e9d7daef7973a52da93258eb0c57dadfd95dd4f5c338"
+      sha256 "889c72a5b1e788679865d09e5080aad1deeac2982c6f65b1ce5ff081ede0e5de"
     else # ARM
       url "https://github.com/wess/realm/releases/download/v#{version}/realm-linux-arm64-#{version}.tar.gz"
-      sha256 "3cab29ea386a082da6bd594d78966323c90a3d5fed59211aca3fcf3f8a6bf485"
+      sha256 "ad8245823a4349ed1dc4368d834b20f73cb8f7044fddb276fc342435156a3de6"
     end
   end
 
