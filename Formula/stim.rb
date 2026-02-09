@@ -1,5 +1,5 @@
 class Stim < Formula
-  desc "A little language to make prompts more programm-y"
+  desc "A little language to make prompts more program-y"
   homepage "https://github.com/wess/stim"
   version "1.0.1"
 
@@ -17,11 +17,18 @@ class Stim < Formula
   end
 
   def install
-    bin.install "stim"
+    if OS.mac?
+      if Hardware::CPU.intel?
+        bin.install "stim-darwin-x64" => "stim"
+      else
+        bin.install "stim-darwin-arm64" => "stim"
+      end
+    elsif OS.linux?
+      bin.install "stim-linux-x64" => "stim"
+    end
   end
 
   test do
-    # basic smoke test
-    assert_match 1, 1
+    assert_match "Stim v#{version}", shell_output("#{bin}/stim")
   end
 end
