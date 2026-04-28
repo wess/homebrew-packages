@@ -1,9 +1,9 @@
 class Ambry < Formula
   desc "Open-source, cross-platform database client"
   homepage "https://github.com/wess/ambry"
-  url "https://github.com/wess/ambry/releases/download/v0.2.1/ambry-darwin-arm64.tar.gz"
-  version "0.2.1"
-  sha256 "d634c8bdc788fb9a35a28359acf4e981258e4cf8000ccfa60e43d82b40a21ff3"
+  url "https://github.com/wess/ambry/releases/download/v0.2.2/ambry-darwin-arm64.tar.gz"
+  version "0.2.2"
+  sha256 "26b4968616d4051bce7cd74219409cbb83a66b0f952cdfca1131496fd3ecc341"
   license "MIT"
 
   depends_on arch: :arm64
