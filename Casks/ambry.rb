@@ -1,6 +1,6 @@
 cask "ambry" do
-  version "0.2.2"
-  sha256 "26b4968616d4051bce7cd74219409cbb83a66b0f952cdfca1131496fd3ecc341"
+  version "0.2.3"
+  sha256 "ec1fbd92374a00ca49a4720a50022e0c06b434552585a2e8e5c500a1c64a08a7"
 
   url "https://github.com/wess/ambry/releases/download/v#{version}/ambry-darwin-arm64.tar.gz"
   name "Ambry"
