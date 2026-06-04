@@ -1,8 +1,8 @@
 cask "ambry" do
-  version "0.2.3"
-  sha256 "ec1fbd92374a00ca49a4720a50022e0c06b434552585a2e8e5c500a1c64a08a7"
+  version "1.0.3"
+  sha256 "7d8e896794fdc4c95ccf1cd097b36bbc5a85164e5ebb9828f48e8d912adbc0b6"
 
-  url "https://github.com/wess/ambry/releases/download/v#{version}/ambry-darwin-arm64.tar.gz"
+  url "https://github.com/wess/ambry/releases/download/v#{version}/Ambry.dmg"
   name "Ambry"
   desc "Open-source, cross-platform database client"
   homepage "https://github.com/wess/ambry"
