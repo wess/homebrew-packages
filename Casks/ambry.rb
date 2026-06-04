@@ -1,6 +1,6 @@
 cask "ambry" do
-  version "1.0.6"
-  sha256 "070d3ce745be6045036565a466762be991caeb571d9cadd411153b29da40e5c0"
+  version "1.0.7"
+  sha256 "9b9a67aa899f07f2c22a3fe0f3cb7ba022da0adf2c06b2cdaff99cdb1fb5f1e4"
 
   url "https://github.com/wess/ambry/releases/download/v#{version}/Ambry.dmg"
   name "Ambry"
