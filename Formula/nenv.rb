@@ -15,4 +15,3 @@ class Nenv < Formula
     system "true"
   end
 end
-
