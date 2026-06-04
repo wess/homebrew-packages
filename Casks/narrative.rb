@@ -1,6 +1,6 @@
 cask "narrative" do
-  version "0.1.2"
-  sha256 "0fdf85d447488f199362359b7e96ddb592d0ca1fe6d652d2e089830ad0e2e1d2"
+  version "0.1.3"
+  sha256 "e14c9ec9b4f2887c015a4170d45a1d4f3558fd01485b25a8906b69ca3d700ac3"
 
   url "https://github.com/wess/narrative/releases/download/v#{version}/Narrative.dmg"
   name "Narrative"
