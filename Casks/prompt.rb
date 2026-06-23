@@ -1,6 +1,6 @@
 cask "prompt" do
-  version "0.2.2"
-  sha256 "21eaa832a96a473aae3061077c53fe26259e00ad97e9eca49c541f75e02fd9d9"
+  version "0.3.0"
+  sha256 "7c3fac2d71f7fb5051cfe6408d3c9d7f03a6673e14d3722286afe40e83ddbdcb"
 
   url "https://github.com/wess/prompt/releases/download/v#{version}/Prompt.dmg"
   name "Prompt"
