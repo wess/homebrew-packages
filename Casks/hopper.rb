@@ -8,7 +8,7 @@ cask "hopper" do
   homepage "https://github.com/wess/hopper"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Hopper.app"
 
