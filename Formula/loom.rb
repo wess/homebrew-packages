@@ -1,28 +1,28 @@
 class Loom < Formula
   desc "Package manager for AI skills (Claude Code, Codex, and friends)"
   homepage "https://wess.io/loom"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/wess/loom/releases/download/v#{version}/loom-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "7240e99a5f0818d20e46845fafe7386efde6616b3c2a7f591392b1ee796955ba"
+      sha256 "024d9503c17a25b416a1f188b69a70c793fbc282a8d16e7da9d69d044358fdc5"
     end
     on_intel do
       url "https://github.com/wess/loom/releases/download/v#{version}/loom-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "513c1175b43da71b88d0a6dce2b5de46b68262bb36679631ae477e66b7a938ea"
+      sha256 "d42d0916d1fe9842e715882e2f7e4651a0d5be2446ff7bba7272304b0f9d9bcb"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/wess/loom/releases/download/v#{version}/loom-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "42643b37eacd755af7bad492e47fed8827c61e244bec732cedf1317b8d7556a9"
+      sha256 "b7865c57cbe39efa7e3bd25cc8fb80c5e119b135b19851553e89da316a23741b"
     end
     on_intel do
       url "https://github.com/wess/loom/releases/download/v#{version}/loom-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "98cb5b278976d4c45b56718a170fb9a78ee4f11cd6f30c14e1e3dbc92bf687fc"
+      sha256 "03cc701e198e1c96ff97456a033ad515b095b58ab867e46cfdc4611ef858ac73"
     end
   end
 
