@@ -17,12 +17,4 @@ cask "asylum" do
     "~/Library/Preferences/dev.asylum.app.plist",
     "~/.config/asylum",
   ]
-
-  caveats <<~EOS
-    Asylum is not yet signed or notarized, so Gatekeeper will refuse to
-    open it. Either open System Settings -> Privacy & Security and
-    choose "Open Anyway", or clear the quarantine flag:
-
-      xattr -dr com.apple.quarantine "#{appdir}/Asylum.app"
-  EOS
 end
