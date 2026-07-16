@@ -1,6 +1,6 @@
 cask "asylum" do
-  version "0.1.0"
-  sha256 "d13d83acf99f4ca3d8f6f49823ebd316bb718789fc6e64519ca48a0a0a19017d"
+  version "0.1.1"
+  sha256 "d7be2817aa9ed54e4497e09092b85c59998cb2f522131149d89b72d8807e144e"
 
   url "https://github.com/wess/asylum/releases/download/v#{version}/Asylum.dmg"
   name "Asylum"
