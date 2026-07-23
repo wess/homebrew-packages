@@ -1,6 +1,6 @@
 cask "hopper" do
-  version "0.9.0"
-  sha256 "ac1079075d70b97bc901ae19e90b120752e4a4ad7d78340a97e5e7d017e8f461"
+  version "0.10.0"
+  sha256 "c9edd774c87e05422d2b262073b6c36e74edc65d466f3573c77321b3d7b9a697"
 
   url "https://github.com/wess/hopper/releases/download/v#{version}/Hopper.dmg"
   name "Hopper"
