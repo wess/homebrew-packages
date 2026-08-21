@@ -1,6 +1,6 @@
 cask "tables" do
-  version "0.1.0"
-  sha256 "007bb0843d78f4815ab47883a8e1725d35faea004993696a9d87134db3e6f4aa"
+  version "0.2.0"
+  sha256 "4cba93b86c29d8e87d12db61aaa3688963b2ac8b30fbbd2790fdb6c54d740629"
 
   url "https://github.com/wess/tables/releases/download/v#{version}/Tables.dmg"
   name "Tables"
