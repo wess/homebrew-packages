@@ -4,7 +4,7 @@ cask "hopper" do
 
   url "https://github.com/wess/hopper/releases/download/v#{version}/Hopper.dmg"
   name "Hopper"
-  desc "Native Docker engine and manager — runs Docker in its own VM, no Docker Desktop"
+  desc "Native container manager — Apple Containers on macOS, Docker or Podman on Linux"
   homepage "https://github.com/wess/hopper"
 
   depends_on arch: :arm64
