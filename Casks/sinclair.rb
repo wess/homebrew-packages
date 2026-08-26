@@ -1,6 +1,6 @@
 cask "sinclair" do
-  version "1.33.1"
-  sha256 "7db34d8637aa9eddb77c67385925c77399b0b67a2d9e50476c59a067fa3a2561"
+  version "1.33.2"
+  sha256 "3a37d531bd1e04644d45bb5cec861b204ce5ee0b5ba3ead57c927cb9a559fa8e"
 
   url "https://github.com/wess/sinclair/releases/download/v#{version}/Sinclair.dmg"
   name "Sinclair"
