@@ -7,23 +7,23 @@ class Ainz < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/wess/ainz/releases/download/v0.5.0/ainz-0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "e230472d47166ac5e7b3f3218bf78e0276c9fbcc9e97199fa0d8e3123a398359"
+      url "https://github.com/wess/ainz/releases/download/v0.5.1/ainz-0.5.1-aarch64-apple-darwin.tar.gz"
+      sha256 "bcd9e983867d70f7fabbeb815939eeb624e81453ef3ff31c41d3926a1ad81006"
     end
     on_intel do
-      url "https://github.com/wess/ainz/releases/download/v0.5.0/ainz-0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "d0eb211caa6dcc1f05da6a45461168af9506b828ee7e72cff0b37342a8f7a403"
+      url "https://github.com/wess/ainz/releases/download/v0.5.1/ainz-0.5.1-x86_64-apple-darwin.tar.gz"
+      sha256 "1f5c875fc93075147eef0a4f71184db8f7e9ec736dd0ea25dea863161ace53f3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/wess/ainz/releases/download/v0.5.0/ainz-0.5.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e4b6ae37e10e9db3b5c4ef43aa138edc36a217ac997d703a0ceb97e6bceab137"
+      url "https://github.com/wess/ainz/releases/download/v0.5.1/ainz-0.5.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fe215140d8b48cfd71fd5ce70dc0118ec5cebc5e522d39bf4c16224737cf87fc"
     end
     on_intel do
-      url "https://github.com/wess/ainz/releases/download/v0.5.0/ainz-0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "65d670ddf45a544cfa55df318e454b37b1f65856b2ef04d097514aaf173fa96e"
+      url "https://github.com/wess/ainz/releases/download/v0.5.1/ainz-0.5.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3876b752da1f5932eb8ba03d33c67016e1414422f31936292a15680651d68cc6"
     end
   end
 
