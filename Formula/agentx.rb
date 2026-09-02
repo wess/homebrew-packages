@@ -3,25 +3,27 @@ class Agentx < Formula
   homepage "https://wess.io/agentx/"
   license "MIT"
 
+  depends_on "ripgrep"
+
   on_macos do
     on_arm do
-      url "https://github.com/wess/agentx/releases/download/v0.1.0/agentx-0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c82e14bfed5ec8fa48a2738c85b0636f9e61e62b6e7a9cf67c06b883226b2acc"
+      url "https://github.com/wess/agentx/releases/download/v0.1.1/agentx-0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "4ef7945a00ef4fcb1bb0edcc178bc0904d4a09f11b2e5ee6627bed92f6fef743"
     end
     on_intel do
-      url "https://github.com/wess/agentx/releases/download/v0.1.0/agentx-0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "00b2ddcf89990840285194d6078ccb061e15daff39a665d6c1f80408a94e5d59"
+      url "https://github.com/wess/agentx/releases/download/v0.1.1/agentx-0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "a31166d4eded7f7b24d8c40dc45a5f7177c598db5b0eba282539802824c466b8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/wess/agentx/releases/download/v0.1.0/agentx-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6e95a012d8996cc23f0439ee7e03f23881e133c66d933ffda67c0ea8d7171352"
+      url "https://github.com/wess/agentx/releases/download/v0.1.1/agentx-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7426bb4396e74088ee827db09313e9da0170fa2adbd28492b3b8b21f7fe91bf6"
     end
     on_intel do
-      url "https://github.com/wess/agentx/releases/download/v0.1.0/agentx-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "23c2cf67182b68ec6e0728840c24f282e02e35a34094fd55808302bfbc4342ac"
+      url "https://github.com/wess/agentx/releases/download/v0.1.1/agentx-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4f5ef27713699d650e72a10ce363b5947fa295efa3e0907b89e1e7fda9b5fa5b"
     end
   end
 
