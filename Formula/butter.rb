@@ -5,8 +5,11 @@ class Butter < Formula
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/wess/butter/releases/download/v#{version}/butter-darwin-arm64.tar.gz"
-    sha256 "ebea401a16b3d3d35c6301d05ffec269b98182674dd0d503770498a7bad6c4c5"
+
+    on_arm do
+      url "https://github.com/wess/butter/releases/download/v#{version}/butter-darwin-arm64.tar.gz"
+      sha256 "ebea401a16b3d3d35c6301d05ffec269b98182674dd0d503770498a7bad6c4c5"
+    end
   end
 
   on_linux do

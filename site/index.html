@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wess Packages - Homebrew tap</title>
+    <meta name="description" content="Homebrew formulae and casks for Wess's open-source packages.">
+    <meta name="theme-color" content="#fff8ea">
+    <style>
+      :root {
+        color-scheme: light;
+        --cream: #fff8ea;
+        --ink: #20160f;
+        --muted: #755f4e;
+        --line: #342317;
+        --orange: #ff9f1c;
+        --blue: #276fbf;
+        --green: #2f9c67;
+        --pink: #f45b69;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          linear-gradient(90deg, rgba(32, 22, 15, 0.06) 1px, transparent 1px) 0 0 / 52px 52px,
+          var(--cream);
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .skip {
+        position: absolute;
+        left: 1rem;
+        top: -4rem;
+        padding: 0.7rem 1rem;
+        background: var(--ink);
+        color: var(--cream);
+      }
+
+      .skip:focus {
+        top: 1rem;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(1160px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 1rem 0;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        text-decoration: none;
+        font-weight: 950;
+      }
+
+      .cap {
+        display: grid;
+        width: 2.4rem;
+        height: 2.4rem;
+        place-items: center;
+        border: 2px solid var(--line);
+        border-radius: 50% 50% 46% 46%;
+        background: var(--orange);
+        box-shadow: inset 0 -0.45rem 0 rgba(32, 22, 15, 0.14);
+      }
+
+      nav {
+        display: flex;
+        gap: 1rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      nav a {
+        text-decoration: none;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(330px, 1.1fr);
+        gap: clamp(2rem, 6vw, 5rem);
+        align-items: center;
+        width: min(1160px, calc(100% - 2rem));
+        min-height: calc(100vh - 5rem);
+        margin: 0 auto;
+        padding: 3rem 0 4rem;
+      }
+
+      .kicker {
+        margin: 0 0 0.9rem;
+        color: var(--blue);
+        font: 900 0.82rem ui-monospace, SFMono-Regular, Menlo, monospace;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(4.4rem, 10vw, 9rem);
+        line-height: 0.82;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        max-width: 38rem;
+        margin: 1.4rem 0 0;
+        color: var(--muted);
+        font-size: 1.15rem;
+        line-height: 1.7;
+      }
+
+      .command {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+        max-width: 39rem;
+        margin-top: 1.8rem;
+        padding: 0.9rem;
+        border: 2px solid var(--line);
+        border-radius: 999px;
+        background: #fffef8;
+        box-shadow: 8px 8px 0 rgba(32, 22, 15, 0.14);
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-weight: 800;
+      }
+
+      .command a {
+        margin-left: auto;
+        padding: 0.65rem 0.9rem;
+        border-radius: 999px;
+        background: var(--ink);
+        color: var(--cream);
+        text-decoration: none;
+        font-weight: 900;
+      }
+
+      .shelf {
+        position: relative;
+        min-height: 610px;
+      }
+
+      .rack {
+        position: absolute;
+        inset: 8% 4%;
+        border: 2px solid var(--line);
+        border-radius: 34px;
+        background: #fffef8;
+        box-shadow: 20px 20px 0 rgba(32, 22, 15, 0.14);
+        transform: rotate(-2deg);
+      }
+
+      .slot {
+        position: absolute;
+        display: grid;
+        width: 12rem;
+        min-height: 15rem;
+        padding: 1rem;
+        align-content: space-between;
+        border: 2px solid var(--line);
+        border-radius: 999px 999px 28px 28px;
+        background: var(--orange);
+        box-shadow: 10px 10px 0 rgba(32, 22, 15, 0.13);
+      }
+
+      .slot strong {
+        font-size: 1.35rem;
+      }
+
+      .slot span {
+        color: rgba(32, 22, 15, 0.68);
+        font: 800 0.76rem ui-monospace, SFMono-Regular, Menlo, monospace;
+        text-transform: uppercase;
+      }
+
+      .slot.one { left: 10%; top: 13%; background: #ffbe0b; }
+      .slot.two { left: 40%; top: 27%; background: #8ecae6; }
+      .slot.three { right: 8%; top: 9%; background: #b7e4c7; }
+      .slot.four { left: 24%; bottom: 6%; background: #ffcad4; }
+      .slot.five { right: 22%; bottom: 12%; background: #cdb4db; }
+
+      .details {
+        width: min(1160px, calc(100% - 2rem));
+        margin: 0 auto 5rem;
+        padding: clamp(1.2rem, 4vw, 2.5rem);
+        border: 2px solid var(--line);
+        border-radius: 28px;
+        background: #fffef8;
+        box-shadow: 12px 12px 0 rgba(32, 22, 15, 0.12);
+      }
+
+      .details h2 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 4.5rem);
+        line-height: 0.9;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      article {
+        padding: 1.2rem;
+        border: 2px solid var(--line);
+        border-radius: 18px;
+      }
+
+      article p {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      @media (max-width: 900px) {
+        .hero,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 580px) {
+        nav {
+          display: none;
+        }
+
+        h1 {
+          font-size: 4rem;
+        }
+
+        .command {
+          border-radius: 24px;
+        }
+
+        .command a {
+          width: 100%;
+          margin-left: 0;
+          text-align: center;
+        }
+
+        .slot {
+          width: 9rem;
+          min-height: 12rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <a class="brand" href="#top"><span class="cap">⌂</span><span>Wess Packages</span></a>
+      <nav aria-label="Site">
+        <a href="#install">Install</a>
+        <a href="#tap">Tap</a>
+        <a href="#source">Source</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="top">
+        <div>
+          <p class="kicker">Homebrew tap</p>
+          <h1>A small shelf for useful builds.</h1>
+          <p class="lede">
+            Formulae and casks for Wess's open-source tools, packaged for the path people already use on macOS and Linux.
+          </p>
+          <div class="command" id="install">
+            <code>brew install wess/packages/&lt;formula&gt;</code>
+            <a href="https://github.com/wess/homebrew-packages">View source</a>
+          </div>
+        </div>
+        <div class="shelf" aria-label="Package shelf illustration">
+          <div class="rack"></div>
+          <div class="slot one"><strong>Formula</strong><span>source builds</span></div>
+          <div class="slot two"><strong>Cask</strong><span>apps</span></div>
+          <div class="slot three"><strong>Tap</strong><span>wess/packages</span></div>
+          <div class="slot four"><strong>Brew</strong><span>install</span></div>
+          <div class="slot five"><strong>Ship</strong><span>repeatable</span></div>
+        </div>
+      </section>
+      <section class="details" id="tap">
+        <p class="kicker">Two paths</p>
+        <h2>Install directly or tap once.</h2>
+        <div class="grid">
+          <article>
+            <strong>Direct</strong>
+            <p><code>brew install wess/packages/&lt;formula&gt;</code> gets one package without changing your tap list.</p>
+          </article>
+          <article>
+            <strong>Tap</strong>
+            <p><code>brew tap wess/packages</code> makes future installs shorter and keeps updates flowing through Homebrew.</p>
+          </article>
+          <article id="source">
+            <strong>Source</strong>
+            <p>Formula and cask definitions live in the repository, ready to audit before installation.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

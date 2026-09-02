@@ -4,6 +4,8 @@ class Loom < Formula
   version "0.1.1"
   license "MIT"
 
+  depends_on "git"
+
   on_macos do
     on_arm do
       url "https://github.com/wess/loom/releases/download/v#{version}/loom-#{version}-aarch64-apple-darwin.tar.gz"
@@ -25,8 +27,6 @@ class Loom < Formula
       sha256 "03cc701e198e1c96ff97456a033ad515b095b58ab867e46cfdc4611ef858ac73"
     end
   end
-
-  depends_on "git"
 
   def install
     bin.install "loom"

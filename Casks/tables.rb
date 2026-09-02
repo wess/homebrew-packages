@@ -13,8 +13,8 @@ cask "tables" do
   app "Tables.app"
 
   zap trash: [
+    "~/.tables",
     "~/Library/Application Support/Tables",
     "~/Library/Preferences/dev.tables.app.plist",
-    "~/.tables",
   ]
 end

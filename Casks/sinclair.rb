@@ -13,8 +13,8 @@ cask "sinclair" do
   app "Sinclair.app"
 
   zap trash: [
+    "~/.config/sinclair",
     "~/Library/Application Support/Sinclair",
     "~/Library/Preferences/io.wess.sinclair.plist",
-    "~/.config/sinclair",
   ]
 end

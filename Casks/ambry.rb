@@ -8,6 +8,7 @@ cask "ambry" do
   homepage "https://github.com/wess/ambry"
 
   depends_on arch: :arm64
+  depends_on :macos
 
   app "Ambry.app"
 

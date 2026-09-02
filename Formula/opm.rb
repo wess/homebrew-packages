@@ -1,7 +1,7 @@
 class Opm < Formula
-  desc "A CLI app to manage OpenAPI projects"
+  desc "CLI app to manage OpenAPI projects"
   homepage "https://github.com/wess/opm"
-  url "https://github.com/wess/opm/archive/refs/heads/main.zip"
+  url "https://github.com/wess/opm/archive/refs/heads/main.tar.gz"
   version "0.0.2"
   sha256 :no_check
 

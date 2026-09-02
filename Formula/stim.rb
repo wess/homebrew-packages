@@ -1,5 +1,5 @@
 class Stim < Formula
-  desc "A little language to make prompts more program-y"
+  desc "Little language to make prompts more program-y"
   homepage "https://github.com/wess/stim"
   version "1.2.1"
 

@@ -4,7 +4,7 @@ cask "hopper" do
 
   url "https://github.com/wess/hopper/releases/download/v#{version}/Hopper.dmg"
   name "Hopper"
-  desc "Native container manager — Apple Containers on macOS, Docker or Podman on Linux"
+  desc "Native manager for Apple, Docker, and Podman containers"
   homepage "https://github.com/wess/hopper"
 
   depends_on arch: :arm64
@@ -16,8 +16,8 @@ cask "hopper" do
   app "Hopper.app"
 
   zap trash: [
+    "~/.hopper",
     "~/Library/Application Support/Hopper",
     "~/Library/Preferences/io.wess.hopper.plist",
-    "~/.hopper",
   ]
 end

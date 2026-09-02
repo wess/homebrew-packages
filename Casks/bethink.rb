@@ -8,6 +8,7 @@ cask "bethink" do
   homepage "https://github.com/wess/narrative"
 
   depends_on arch: :arm64
+  depends_on :macos
 
   app "Bethink.app"
 

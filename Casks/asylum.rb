@@ -13,8 +13,8 @@ cask "asylum" do
   app "Asylum.app"
 
   zap trash: [
+    "~/.config/asylum",
     "~/Library/Application Support/Asylum",
     "~/Library/Preferences/dev.asylum.app.plist",
-    "~/.config/asylum",
   ]
 end

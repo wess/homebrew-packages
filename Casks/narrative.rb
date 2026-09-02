@@ -8,6 +8,7 @@ cask "narrative" do
   homepage "https://github.com/wess/narrative"
 
   depends_on arch: :arm64
+  depends_on :macos
 
   app "Narrative.app"
 
