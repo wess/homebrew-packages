@@ -1,6 +1,6 @@
 cask "synapse" do
-  version "1.7.1"
-  sha256 "b8bc03d16c79b838ef32ac46049e406bcdfc4c91d5a5a7c7d9c4b2289385fe48"
+  version "1.8.0"
+  sha256 "6a16a743ad90fb779c87e4d3f4b31d09299544280de604dd1494ae1bf722b14c"
 
   url "https://github.com/wess/synapse/releases/download/v#{version}/synapse.zip"
   name "Synapse"
