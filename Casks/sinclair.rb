@@ -1,6 +1,6 @@
 cask "sinclair" do
-  version "1.34.0"
-  sha256 "e73b1e4c3caac1f390202e89bf0d403c2fb9bf140a1bb468651e781235ad1808"
+  version "1.35.0"
+  sha256 "cfee8aaf6c80cfc4d747eb4ed0a82e120cf1edb9f5ea2e252fdf510bb8e43124"
 
   url "https://github.com/wess/sinclair/releases/download/v#{version}/Sinclair.dmg"
   name "Sinclair"
@@ -13,8 +13,8 @@ cask "sinclair" do
   app "Sinclair.app"
 
   zap trash: [
-    "~/.config/sinclair",
     "~/Library/Application Support/Sinclair",
     "~/Library/Preferences/io.wess.sinclair.plist",
+    "~/.config/sinclair",
   ]
 end
