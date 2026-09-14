@@ -1,13 +1,19 @@
 cask "hopper" do
-  version "0.12.3"
-  sha256 "eaa2a88c3539df2d02f4647dfad8ab020dd8f3b98b355a75971682df05d005a4"
+  version "0.13.0"
 
-  url "https://github.com/wess/hopper/releases/download/v#{version}/Hopper.dmg"
   name "Hopper"
-  desc "Native manager for Apple, Docker, and Podman containers"
+  desc "Native container manager — Apple Containers on macOS, Docker or Podman on Linux"
   homepage "https://github.com/wess/hopper"
 
-  depends_on arch: :arm64
+  on_arm do
+    url "https://github.com/wess/hopper/releases/download/v#{version}/Hopper.dmg"
+    sha256 "dc15b8618904482e0713c4c9d2837c0966f118bb8d54b65583df323109297349"
+  end
+  on_intel do
+    url "https://github.com/wess/hopper/releases/download/v#{version}/Hopper-0.13.0-intel.dmg"
+    sha256 "dff7db43e285a48c7bf68ef1ea5fd32f0367c639946267d2156618d1c31ef74e"
+  end
+
   # The app runs on Sonoma against an engine you already have; Apple
   # Containers itself needs macOS 26, which Hopper reports in-app
   # rather than blocking the install over.
@@ -16,8 +22,8 @@ cask "hopper" do
   app "Hopper.app"
 
   zap trash: [
-    "~/.hopper",
     "~/Library/Application Support/Hopper",
     "~/Library/Preferences/io.wess.hopper.plist",
+    "~/.hopper",
   ]
 end
