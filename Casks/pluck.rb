@@ -1,11 +1,11 @@
 cask "pluck" do
-  version "0.1.0"
-  sha256 "3c6b53b2b42b77ce1816783f0673b79fe7358c12f7cf7aeb8876a551fe465a47"
+  version "0.2.1"
+  sha256 "49d615afca52049683e624127a5f57c150b61d28821c77f20a50dc1176d36e82"
 
   url "https://github.com/wess/pluck/releases/download/v#{version}/Pluck.dmg"
   name "Pluck"
   desc "Drop anything, get a short link back"
-  homepage "https://pluck.io"
+  homepage "https://pluck.io/"
 
   depends_on arch: :arm64
   depends_on macos: :ventura
