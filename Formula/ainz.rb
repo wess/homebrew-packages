@@ -1,8 +1,8 @@
 class Ainz < Formula
   desc "Terminal-native agent harness and session multiplexer"
   homepage "https://wess.io/ainz/"
-  url "https://github.com/wess/ainz/releases/download/v0.13.0/ainz-0.13.0-aarch64-apple-darwin.tar.gz"
-  sha256 "8c081e1d8a8d155321b5075927f955c9295ecf4ac942ae1404977ddd64d53c47"
+  url "https://github.com/wess/ainz/releases/download/v0.14.0/ainz-0.14.0-aarch64-apple-darwin.tar.gz"
+  sha256 "2efc1b67218771acd025b1f4f89561451decc4353c2f4415a740027562dbf5cb"
   license "MIT"
 
   depends_on "ripgrep"
@@ -13,12 +13,12 @@ class Ainz < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/wess/ainz/releases/download/v0.13.0/ainz-0.13.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "597670b84a0a49a9c0c8cd302ca521f5155d7243e1de18bbbe43294860f20b2c"
+      url "https://github.com/wess/ainz/releases/download/v0.14.0/ainz-0.14.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4aa717eb4384e5f9471b9d3895fd181acdbf29453d3931e6001c56881856d9ff"
     end
     on_intel do
-      url "https://github.com/wess/ainz/releases/download/v0.13.0/ainz-0.13.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c00e0b737992eaf0987773b1eb812fd778c955cd264111e26b494b696fa03805"
+      url "https://github.com/wess/ainz/releases/download/v0.14.0/ainz-0.14.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "577bbe93c11eef254b1c2c02a656ed0e7681991fc7dcdc4cc93c6371f53280c6"
     end
   end
 
