@@ -2,7 +2,7 @@ cask "pluck" do
   version "0.2.2"
   sha256 "39a552710af20c2d2031b730184e6f1fb8e25ab115d290d457572b7b6e67210c"
 
-  url "https://github.com/wess/pluck/releases/download/v#{version}/Pluck.dmg"
+  url "https://pluck.io/download/mac/#{version}/Pluck.dmg"
   name "Pluck"
   desc "Drop anything, get a short link back"
   homepage "https://pluck.io/"
