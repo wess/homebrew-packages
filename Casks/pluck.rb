@@ -1,6 +1,6 @@
 cask "pluck" do
-  version "0.2.2"
-  sha256 "39a552710af20c2d2031b730184e6f1fb8e25ab115d290d457572b7b6e67210c"
+  version "0.2.3"
+  sha256 "a6df62df02c50ab61950a74c390283887b04c4f2ff41a589cbcbb00e1720024f"
 
   url "https://pluck.io/download/mac/#{version}/Pluck.dmg"
   name "Pluck"
