@@ -1,20 +1,20 @@
 class Tonic < Formula
   desc "Elixir-to-native compiler with an LLVM backend and process runtime"
   homepage "https://wess.io/tonic/"
-  version "0.1.0-beta.3"
+  version "0.1.1-beta.2"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/wess/tonic/releases/download/v0.1.0-beta.3/tonic0.1.0-beta.3.macosarm64.tar.gz"
-      sha256 "ab72ab8e5d9a8a1038baadea941ffd855bd2aa485bd647ea919035fdfae28688"
+      url "https://github.com/wess/tonic/releases/download/v0.1.1-beta.2/tonic0.1.1-beta.2.macosarm64.tar.gz"
+      sha256 "6203443a5f9d6d77eb082e131efff0d372889d8c9afd229f7e07a1da51371407"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/wess/tonic/releases/download/v0.1.0-beta.3/tonic0.1.0-beta.3.linuxx64.tar.gz"
-      sha256 "e08570c132ae9eddddad3aa354db1d09d6bc05acf7fbb268666096fbd2bbe987"
+      url "https://github.com/wess/tonic/releases/download/v0.1.1-beta.2/tonic0.1.1-beta.2.linuxx64.tar.gz"
+      sha256 "ca483c4279c1ec5c9052bc83ec4317672853e590f8116854237430a9c53a715a"
     end
   end
 
