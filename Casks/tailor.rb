@@ -1,6 +1,6 @@
 cask "tailor" do
-  version "0.4.0"
-  sha256 "5421cc398ea46ccc805f6339b996e467f642c716e438d6f950c93090ebb05356"
+  version "0.4.3"
+  sha256 "3528181119d6819f104d525329f85e0467e3d08fd8a57970749e47861d8e701b"
 
   url "https://github.com/wess/tailor/releases/download/v#{version}/Tailor.dmg"
   name "Tailor"
