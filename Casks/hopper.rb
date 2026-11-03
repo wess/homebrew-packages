@@ -1,12 +1,12 @@
 cask "hopper" do
-  version "0.15.97"
+  version "0.15.98"
 
   name "Hopper"
   desc "Native container manager for Apple silicon Macs"
   homepage "https://github.com/wess/hopper"
 
   url "https://github.com/wess/hopper/releases/download/v#{version}/Hopper.dmg"
-  sha256 "7dfd9c0a3a7674c4f91ddb6ed692b15436b8f152ea7ac608006224855ad0c0e5"
+  sha256 "633cf16e5eb687d88caafcd5957acf0b22522c0edc633902d2c0108baa14ebf8"
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
